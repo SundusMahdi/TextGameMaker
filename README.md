@@ -81,7 +81,7 @@ While creating a game:
         luck / 50
         health - attack
 
-    For more information visit the function responsible for this on line 49.
+For more information visit the function responsible for this on line 49.
 
 "What is the condition for the first outcome?"
     This line is mandatory and must be filled. Inputs must be 3 seperate
@@ -92,7 +92,7 @@ While creating a game:
         health <= 0
         coins = 100
 
-    For more information visit the function responsible for this on line 116.
+For more information visit the function responsible for this on line 116.
 
 While running a game:
 "Turn on choiceMode?"
