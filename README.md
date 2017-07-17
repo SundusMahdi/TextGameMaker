@@ -55,60 +55,60 @@ conditional (C):
 Here's a walkthough of the more confusing prompts:
 
 While creating a game:
-    "If you wish to use a pre-existing event give the ID: "
-        If you notice, each event has a marking ID that appears in another prompt
-        for example:
-            "Event ID:  ID#1"
-        This basically asks if you want to reuse a defined tree then give
-        the ID (ID#1) or you can leave it blank and it will continue normally.
+"If you wish to use a pre-existing event give the ID: "
+    If you notice, each event has a marking ID that appears in another prompt
+    for example:
+        "Event ID:  ID#1"
+    This basically asks if you want to reuse a defined tree then give
+    the ID (ID#1) or you can leave it blank and it will continue normally.
 
-    "What is your event type?"
-        This asks which of the five events defined above you would like to use.
-        Your answer must be one letter and uppercase (either: E, S, P, R, or C).
+"What is your event type?"
+    This asks which of the five events defined above you would like to use.
+    Your answer must be one letter and uppercase (either: E, S, P, R, or C).
 
-    "What is your prompt?"
-        This is the text that will be displayed to the player when they reach
-        that event.
+"What is your prompt?"
+    This is the text that will be displayed to the player when they reach
+    that event.
 
-    "Does this event have an effect on a variable?"
-        This line asks if you want to modify a game variable. Inputs must be 3
-        seperate words and consist of "variable operator number" or
-        "variable operator predefined-variable". The modefied variable does not
-        have to be already defined. However, if you do not want to modify a
-        variable just leave the line empty.
-        Examples:
-            good + 10
-            luck / 50
-            health - attack
+"Does this event have an effect on a variable?"
+    This line asks if you want to modify a game variable. Inputs must be 3
+    seperate words and consist of "variable operator number" or
+    "variable operator predefined-variable". The modefied variable does not
+    have to be already defined. However, if you do not want to modify a
+    variable just leave the line empty.
+    Examples:
+        good + 10
+        luck / 50
+        health - attack
 
-        For more information visit the function responsible for this on line 49.
+    For more information visit the function responsible for this on line 49.
 
-    "What is the condition for the first outcome?"
-        This line is mandatory and must be filled. Inputs must be 3 seperate
-        words and consist of "predefined-variable operator number" or
-        "predefined-variable operator predefined-variable".
-        Examples:
-            good > bad
-            health <= 0
-            coins = 100
+"What is the condition for the first outcome?"
+    This line is mandatory and must be filled. Inputs must be 3 seperate
+    words and consist of "predefined-variable operator number" or
+    "predefined-variable operator predefined-variable".
+    Examples:
+        good > bad
+        health <= 0
+        coins = 100
 
-        For more information visit the function responsible for this on line 116.
+    For more information visit the function responsible for this on line 116.
 
 While running a game:
-    "Turn on choiceMode?"
-        This allows player to choose whether they would like to player
-        through the pass or fail trees rather than leave it to blind luck
-        when encountering a probability event. It was added for debugging
-        but we figured it would be fine to leave it in just for the
-        completionists in all of us.
+"Turn on choiceMode?"
+    This allows player to choose whether they would like to player
+    through the pass or fail trees rather than leave it to blind luck
+    when encountering a probability event. It was added for debugging
+    but we figured it would be fine to leave it in just for the
+    completionists in all of us.
 
-    "See path?"
-        This is the equivalent of an instant replay. It reprints your chosen
-        path for you to see.
+"See path?"
+    This is the equivalent of an instant replay. It reprints your chosen
+    path for you to see.
 
-    "Clear path?"
-        If selected this will delete your saved "instant replay" otherwise
-        all your games from that session will be saved into one large path.
+"Clear path?"
+    If selected this will delete your saved "instant replay" otherwise
+    all your games from that session will be saved into one large path.
 
 
 To try loading a premade game copy the contents of the file loop to the
